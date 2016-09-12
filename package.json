@@ -1,6 +1,7 @@
 {
   "name": "input-plugin-currency",
-  "description": "An input plugin for a currency input type.",
+  "version": "0.0.0",
+  "description": "A simple currency input type",
   "main": "index.js",
   "scripts": {
     "test": "npm run nyc",
@@ -16,28 +17,32 @@
     "type": "git",
     "url": "https://github.com/punchcard-cms/input-plugin-currency.git"
   },
-  "keywords": [
-    "punchcard-cms",
-    "input-plugin"
+  "contributors": [
+    "Rachel White <whiter@us.ibm.com>"
   ],
-  "author": "Scott Nath",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/punchcard-cms/input-plugin-currency/issues"
-  },
-  "homepage": "https://github.com/punchcard-cms/input-plugin-currency#readme",
+  "dependencies": {},
   "devDependencies": {
-    "ava": "^0.16.0",
-    "coveralls": "^2.11.12",
-    "eslint": "^3.4.0",
+    "ava": "^0.14.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^2.10.0",
     "eslint-config-punchcard": "^1.0.1",
     "ghooks": "^1.3.2",
-    "nyc": "^8.1.0",
+    "nyc": "^6.0.0",
     "punchcard-commit-msg": "^1.0.0",
     "punchcard-semantic-release": "^2.0.1",
+    "punchcard-shared-tests": "^1.0.2",
     "semantic-release": "^4.3.5",
     "tap-diff": "^0.1.1"
   },
+  "engines": {
+    "node": "5.11",
+    "npm": "^3.6"
+  },
+  "keywords": [
+    "input-plugin",
+    "punchcard-cms"
+  ],
   "nyc": {
     "exclude": [
       "tests/**/*"
